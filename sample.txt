@@ -2,3 +2,4 @@ master_1_edit_from_local
 master_2_edit_from_remote
 develop_1_edit_from_local
 develop_2_edit_from_remote
+develop_3_edit_from_local_wip_copy

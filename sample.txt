@@ -1,1 +1,2 @@
-master_1
+master_1_edit_from_local
+master_2_edit_from_remote

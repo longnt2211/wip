@@ -13,7 +13,7 @@ spec:
         app: po-tool-be-api
     spec:
       containers:
-      - image: okteto/po-tool-be-api:node
+      - image: okteto/hello-world:node
         name: po-tool-be-api
 
 ---

@@ -6,7 +6,7 @@
             "type": "node",
             "request": "attach",
             "address": "localhost",
-            "port": 8081,
+            "port": 9229,
             "localRoot": "${workspaceFolder}",
             "remoteRoot": "/usr/src/app",
             "skipFiles": [

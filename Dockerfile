@@ -5,7 +5,7 @@ COPY bashrc /root/.bashrc
 
 WORKDIR /usr/src/app
 
-ADD package.json .
+#ADD package.json .
 RUN npm install
 RUN npm install -i
 RUN npm i nodemon

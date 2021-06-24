@@ -28,6 +28,6 @@ spec:
   type: ClusterIP  
   ports:
   - name: "po-tool-be-api"
-    port: 8081
+    port: 3000
   selector:
     app: po-tool-be-api

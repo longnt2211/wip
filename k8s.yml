@@ -1,33 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-world
+  name: po-tool-be-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello-world
+      app: po-tool-be-api
   template:
     metadata:
       labels:
-        app: hello-world
+        app: po-tool-be-api
     spec:
       containers:
       - image: okteto/hello-world:node
-        name: hello-world
+        name: po-tool-be-api
 
 ---
 
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world
+  name: po-tool-be-api
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hello-world"
-    port: 3000
+  - name: "po-tool-be-api"
+    port: 8081
   selector:
-    app: hello-world
+    app: po-tool-be-api

@@ -11,7 +11,7 @@ RUN npm install -i
 RUN npm i nodemon
 # COPY index.js .
 
-EXPOSE 8081
+EXPOSE 3000
 
 #CMD npm start
-CMD npm run dev
+CMD nodemon src/app.js

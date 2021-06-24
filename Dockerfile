@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 RUN npm install
 RUN npm install -i
 RUN npm i nodemon
-# COPY index.js .
+COPY app.js .
 
 EXPOSE 3000
 

@@ -7,10 +7,11 @@ WORKDIR /usr/src/app
 
 ADD package.json .
 RUN npm install
-
+RUN npm install -i
+RUN npm i nodemon
 # COPY index.js .
 
-EXPOSE 3000
+EXPOSE 8081
 
-# CMD npm start
+#CMD npm start
 CMD npm run dev
